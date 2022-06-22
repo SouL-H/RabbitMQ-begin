@@ -47,6 +47,6 @@ npm run consumer
 
 # V2
 
-![](./img/v2.gif)
+![](https://github.com/SouL-H/RabbitMQ-begin/blob/main/img/v2.gif?raw=true)
 
 ####    Thank You Kablosuzkedi
