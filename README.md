@@ -47,6 +47,6 @@ npm run consumer
 
 # V2
 
-<video src='./img/v2.mov' width=600/>
+![](./img/v2.gif)
 
 ####    Thank You Kablosuzkedi
