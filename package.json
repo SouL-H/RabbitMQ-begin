@@ -1,0 +1,24 @@
+{
+  "name": "rabbitmq-begin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "publisher":"node publisher.js",
+    "consumer":"node consumer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SouL-H/RabbitMQ-begin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SouL-H/RabbitMQ-begin/issues"
+  },
+  "homepage": "https://github.com/SouL-H/RabbitMQ-begin#readme",
+  "dependencies": {
+    "amqplib": "^0.10.0"
+  }
+}
