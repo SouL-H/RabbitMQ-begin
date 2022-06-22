@@ -12,9 +12,9 @@ async function connect_rabbitmq(){
         const assertion= await channel.assertQueue("jobsQueue");
 
         //Message Get
-
         channel.consume('jobsQueue',(data)=>{
             console.log(data.content.toString())
+            channel.ack(data);//Acknowledge the message
         })
   
     }catch(error){
