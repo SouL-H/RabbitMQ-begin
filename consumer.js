@@ -1,7 +1,4 @@
 const amqp= require("amqplib")
-const message={
-    description:"Test message"
-}
 
 connect_rabbitmq();
 
