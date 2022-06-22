@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "publisher":"node publisher.js",
-    "consumer":"node consumer.js"
+    "consumer":"node consumer.js",
+    "publisherv2":"node publisherv2.js",
+    "consumerv2":"node consumerv2.js"
   },
   "repository": {
     "type": "git",

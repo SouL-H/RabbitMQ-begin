@@ -47,6 +47,19 @@ npm run consumer
 
 # V2
 
+```
+Sending message
+
+npm run consumer publisherv2
+```
+
+```
+Reading message
+
+npm run consumer consumerv2
+
+```
+
 ![](https://github.com/SouL-H/RabbitMQ-begin/blob/main/img/v2.gif?raw=true)
 
 ####    Thank You Kablosuzkedi
