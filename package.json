@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "publisher":"node publisher.js",
-    "consumer":"node consumer.js",
-    "publisherv2":"node publisherv2.js",
-    "consumerv2":"node consumerv2.js"
+    "publisher": "node publisher.js",
+    "consumer": "node consumer.js",
+    "publisherv2": "node publisherv2.js",
+    "consumerv2": "node consumerv2.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/SouL-H/RabbitMQ-begin#readme",
   "dependencies": {
-    "amqplib": "^0.10.0"
+    "amqplib": "^0.10.0",
+    "redis": "^3.1.2"
   }
 }

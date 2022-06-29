@@ -1,5 +1,8 @@
 const amqp= require("amqplib")
 const data = require("./data.json")
+const redis =require('redis');
+const checkCredentials = require("near-cli/utils/check-credentials");
+const client = redis.createClient()
 
 connect_rabbitmq();
 
@@ -15,7 +18,13 @@ async function connect_rabbitmq(){
             const userInfo = data.find(u=>u.id==dataInfo.description)
             if(userInfo){
                 console.log("Data found=>>",userInfo)
-                channel.ack(getData);//Acknowledge the message
+                client.set(`user_${userInfo.id}`,JSON.stringify(userInfo),(err,reply)=>{
+                    console.log("Data saved in redis=>>",reply)
+                    if(!err){
+                        channel.ack(getData);//Acknowledge the message
+                    }
+                })
+
             }
            
         });
